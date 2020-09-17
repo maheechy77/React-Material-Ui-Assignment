@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import "./Posts.css";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -12,6 +11,7 @@ import Grid from "@material-ui/core/Grid";
 const useStyles = makeStyles({
 	rootGrid: {
 		flexGrow: 1,
+		padding: 20,
 	},
 	root: {
 		minWidth: 275,
@@ -35,7 +35,7 @@ const Posts = () => {
 	}, []);
 
 	return (
-		<div className="posts">
+		<div display="flex">
 			<Grid
 				container
 				spacing={6}

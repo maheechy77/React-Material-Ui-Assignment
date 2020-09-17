@@ -31,7 +31,7 @@ const Comments = (props) => {
 			.then((res) => res.json())
 			.then((data) => setImages(data));
 	}, []);
-	const random = Math.floor(Math.random() * Math.floor(5));
+	const random = Math.floor(Math.random() * Math.floor(5)) + 1;
 	return (
 		<div>
 			<Card className={classes.root} variant="outlined">
